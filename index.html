@@ -238,14 +238,14 @@
                         <div class="eitemgroup"><label for="contactpname">聯絡人姓名</label><input type="text" class="form-control" name="entry.1191458921" id="contactpname" /></div>
                         <div class="eitemgroup"><label for="contactptel">聯絡人電話</label><input type="tel" class="form-control" name="entry.864185967" id="contactptel" /></div>
                         <div class="eitemgroup"><label for="contactpemail">聯絡人電郵</label><input type="email" class="form-control" name="entry.1036501713" id="contactpemail" /></div>
-                        <div class="eitemgroup"><label for="name">學生姓名</label><input type="text" class="form-control" name="entry.243468554" id="name" /></div>
-                       --> <div class="eitemgroup"><label for="form">就讀年級</label>
-                            <select class="form-control" name="entry.1071384906" id="form">
+                          --><div class="eitemgroup"><label for="name">學生姓名</label><input type="text" class="form-control" name="entry.835386325" id="name" /></div>
+                      <div class="eitemgroup"><label for="form">就讀年級</label>
+                            <select class="form-control" name="entry.1471884350" id="form">
                                 <option value="empty">--請選擇--</option>
                                 <option value="0">一年級</option>
                                 <option value="1">二年級</option>
-                                <option value="2">三年級</option>
-                                <option value="3">四年級</option>
+                                <option value="選項 1">三年級</option>
+                                <option value="選項 2">四年級</option>
                             </select>
                         </div>
                         <!--<div class="eitemgroup"><label for="gender">性別</label>
@@ -290,7 +290,7 @@
                         <div id="enrol-agreeterms" class="fw eitemgroup mb-4">
                             <input type="checkbox" id="cb_agreeterms" style=""/><label class="optionallabel" style="">本人明白及同意<span id="enrol-termsbtn">收集及使用個人資料聲明、使用個人影像和影音聲明及參賽作品版權聲明</span>。</label>
                         </div>-->
-                        <div class="fw"><input type="button" id="EnrollmentSubmit" value="提交表格" disabled /></div>
+                        <div class="fw"><input type="button" id="EnrollmentSubmit" value="提交表格" /></div>
 
                     </div>
                 </div></div>
@@ -450,8 +450,8 @@
 
                 var status = true;
 
-               /* var name = $('#name').val();
-                var schoolname = $('#schoolname').val(); */
+               var name = $('#name').val();
+               /*  var schoolname = $('#schoolname').val(); */
                 var form = $('#form').val();
                /* var tel = $('#tel').val();
                 var email = $('#email').val();
@@ -580,9 +580,9 @@
                         /*'entry.276554308': schoolname,
                         'entry.1191458921':contactpname,
                         'entry.864185967': contactptel,
-                        'entry.1036501713': contactpemail,
-                        'entry.243468554':name,*/
-                        'entry.195105818': form,
+                        'entry.1036501713': contactpemail,*/
+                        'entry.835386325':name,
+                        'entry.1471884350': form,
                         /*'entry.1466157044' : tel,
                         'entry.22417257':email,
                         'entry.1511407010': content,
