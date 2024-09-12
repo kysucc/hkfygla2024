@@ -599,6 +599,7 @@
                     $.ajax({
                             crossDomain:true,
                             type: "post",
+			    mode: 'no-cors',
                             url: "https://docs.google.com/forms/d/e/1FAIpQLSddflzTFqNsyxcVeIH3FbI3aBODqZNBtg75Vb5m8W7pOUsGRA/formResponse?&callback=googleDocCallback",
                             data: data,
                             dataType: "xml",
