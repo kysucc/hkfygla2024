@@ -597,10 +597,10 @@
                     // send
                     window.googleDocCallback = function () { return true; }
                     $.ajax({
-                            crossDomain:true,
-                            type: "post",
                             url: "https://docs.google.com/forms/d/e/1FAIpQLSddflzTFqNsyxcVeIH3FbI3aBODqZNBtg75Vb5m8W7pOUsGRA/formResponse?&callback=googleDocCallback",
+                            crossDomain: true,
                             data: data,
+                            type: "POST", 
                             dataType: "JSONP",
                             complete: function () {
                                 $('#EnrollmentSubmit').val(txt_submitting);
